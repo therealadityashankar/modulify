@@ -6,7 +6,7 @@
 * @param {String} path - the url to import, cannot be a relative url
 */
 export default async function mimport(path){
-  const url = new URL(path, location.href)
+  const url = new URL(path)
   const contentsResp = await fetch(url)
   const contents = await contentsResp.text()
   const beforeVars = new Set(Object.keys(window))
