@@ -12,3 +12,5 @@ async function main(){
 
 main()
 ```
+
+note the url cannot be a relative url
